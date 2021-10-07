@@ -8,12 +8,13 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
   position: relative;
   height: 100vh;
-  background-color: #eee;
+  background-color: #7fdbff;
 }
 
 .weather {
@@ -22,12 +23,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 50vh;
-  width: 50%;
-  background-color: #aaa;
-  border-radius: 5px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
   -webkit-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
   -moz-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
   box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
+  /* border: 1px solid #fff; */
 }
 
 .weather-search {
@@ -37,7 +39,6 @@ html {
 }
 
 .weather-search__input {
-  float: left;
   padding: 2rem;
   width: 80%;
   outline: none;
@@ -47,14 +48,49 @@ html {
 }
 
 .weather-search__icon {
-  display: block;
   color: #fff;
   width: 10%;
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 5rem;
   float: left;
-  margin-left: 3rem;
-  /* position: absolute; */
-  /* top: 2rem;
-  right: 0rem; */
+  position: absolute;
+  top: 2rem;
+  right: 0.5rem;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+.weather-board {
+  padding: 1rem;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.location {
+  position: relative;
+  margin: 1rem;
+}
+
+span {
+}
+
+.location p {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.location-country {
+  font-weight: normal;
+}
+
+.location-city {
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.location-hour {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #bbb;
+  padding: 0 2rem;
 }
