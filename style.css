@@ -12,6 +12,7 @@ html {
 }
 
 .wrapper {
+  color: #fff;
   position: relative;
   height: 100vh;
   background-color: #7fdbff;
@@ -22,44 +23,46 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50vh;
-  width: 30%;
+  width: 40%;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
   -moz-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
   box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
-  /* border: 1px solid #fff; */
+  padding: 2rem 2rem;
 }
+
+/* /////////////////////////////// weather-search ////////////////////////// */
 
 .weather-search {
   position: relative;
-  padding: 2rem 2rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .weather-search__input {
+  display: block;
   padding: 2rem;
-  width: 80%;
+  width: 75%;
   outline: none;
   border: none;
-  border-radius: 2px;
-  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  float: left;
 }
 
 .weather-search__icon {
-  color: #fff;
-  width: 10%;
-  font-size: 5rem;
+  display: block;
   float: left;
-  position: absolute;
-  top: 2rem;
-  right: 0.5rem;
+  width: 10%;
+  font-size: 5.5rem;
+  margin-left: 5rem;
+  color: #fff;
 }
 
 /* /////////////////////////////////////////////////////////////////////// */
 
-.weather-board {
+.weather-location {
   padding: 1rem;
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
@@ -68,9 +71,6 @@ html {
 .location {
   position: relative;
   margin: 1rem;
-}
-
-span {
 }
 
 .location p {
@@ -93,4 +93,75 @@ span {
   top: 0;
   border-left: 1px solid #bbb;
   padding: 0 2rem;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.weather-icon {
+  position: relative;
+  float: left;
+  width: 50%;
+  border-right: 1px solid #bbb;
+}
+.icon {
+  width: 65%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.description {
+  display: block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.fa-pencil-alt {
+  margin-right: 0.5rem;
+  color: #7fdbff;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+.weather-information {
+  float: left;
+  height: 10rem;
+  width: 49%;
+  /* overflow: hidden; */
+}
+
+.temperature {
+  color: #fff;
+  display: block;
+  font-size: 10rem;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+.wind,
+.humidity {
+  float: left;
+  color: #fff;
+  font-size: 4rem;
+  width: 50%;
+  margin-top: 1.5rem;
+}
+
+.fa-wind,
+.wind-speed,
+.hum,
+.fa-tint {
+  display: block;
+  text-align: center;
+}
+
+.fa-wind {
+  color: #ccc;
+}
+
+.fa-tint {
+  color: #7fdbff;
 }
