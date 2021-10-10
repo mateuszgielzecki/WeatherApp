@@ -11,6 +11,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (min-width: 1700) {
+  html {
+    font-size: 20.5%;
+  }
+}
+
 .wrapper {
   position: relative;
   height: 100vh;
@@ -79,14 +85,9 @@ html {
   margin: 1rem;
 }
 
-.location-description p {
+.location-description {
   color: #fff;
   font-size: 5rem;
-}
-
-.location-city {
-  font-weight: 100;
-  font-size: 4rem;
 }
 
 .location-hour {
@@ -125,11 +126,6 @@ html {
   font-size: 2rem;
   color: #fff;
   text-align: center;
-}
-
-.fa-pencil-alt {
-  margin-right: 0.5rem;
-  color: #7fdbff;
 }
 
 /* ///////////////////////////////////////////////////////// */
@@ -171,4 +167,40 @@ html {
 
 .fa-tint {
   color: #7fdbff;
+}
+
+@media screen and (max-width: 1700px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
 }
