@@ -30,7 +30,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   -webkit-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
   -moz-box-shadow: 14px 9px 22px -15px rgba(66, 68, 90, 1);
@@ -83,11 +83,8 @@ html {
 .location-description {
   position: relative;
   margin: 1rem;
-}
-
-.location-description {
-  color: #fff;
   font-size: 5rem;
+  color: #fff;
 }
 
 .location-hour {
@@ -105,6 +102,15 @@ html {
   cursor: pointer;
 }
 
+.error {
+  font-size: 3rem;
+  color: rgb(255, 89, 89);
+  vertical-align: middle;
+}
+
+.error-hidden {
+  display: none;
+}
 /* //////////////////////// weather-icon //////////////////////////////////// */
 
 .weather-icon {
@@ -183,24 +189,55 @@ html {
 
 @media screen and (max-width: 1000px) {
   html {
-    font-size: 30%;
+    font-size: 35%;
   }
-}
 
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 30%;
+  .weather {
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 800px) {
   html {
-    font-size: 20%;
+    font-size: 30%;
+  }
+  .weather {
+    width: 55%;
+  }
+
+  .description {
+    font-size: 3rem;
+    margin: 0rem auto 3rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 25%;
+  }
+  .weather {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 20%;
+  }
+  .weather {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 20%;
+  }
+  .weather {
+    width: 90%;
+  }
+  .description {
+    font-size: 4rem;
+    margin: 0rem auto 3rem;
   }
 }
