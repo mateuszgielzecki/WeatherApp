@@ -87,15 +87,6 @@ html {
   color: #fff;
 }
 
-.location-hour {
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-left: 1px solid #bbb;
-  padding: 0 2rem;
-  transition: all 0.3s;
-}
-
 .fa-map-marker-alt:hover {
   transform: translateY(-3px);
   color: red;
